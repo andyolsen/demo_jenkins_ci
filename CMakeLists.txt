@@ -7,7 +7,3 @@ add_executable(app src/main.cc)
 enable_testing()
 add_executable(test_app tests/test_main.cc)
 add_test(NAME run_tests COMMAND test_app)
-
-# cmake --preset ci
-# cmake --build --preset ci
-# ctest --preset ci
