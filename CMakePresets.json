@@ -3,11 +3,8 @@
   "configurePresets": [
     {
       "name": "ci",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/ci",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      }
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build"
     }
   ],
   "buildPresets": [
