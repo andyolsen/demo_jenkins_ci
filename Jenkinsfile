@@ -10,19 +10,19 @@ pipeline {
 
         stage('Configure') {
             steps {
-                cmd 'cmake --preset ci'
+                sh 'cmake --preset ci'
             }
         }
 
         stage('Build') {
             steps {
-                cmd 'cmake --build --preset ci'
+                sh 'cmake --build --preset ci'
             }
         }
 
         stage('Test') {
             steps {
-                cmd 'ctest --preset ci'
+                sh 'ctest --preset ci'
             }
         }
     }
